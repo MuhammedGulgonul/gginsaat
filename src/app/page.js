@@ -205,6 +205,43 @@ export default async function Home() {
           font-weight: 600;
           box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
+        
+        @media (max-width: 768px) {
+          .hero {
+            height: 60vh !important;
+            min-height: 420px !important;
+            margin-top: 0 !important;
+            padding-top: 3rem !important;
+            background-attachment: scroll !important; /* better performance on mobile */
+          }
+          .hero-content h1 {
+            font-size: 2.2rem !important;
+            line-height: 1.25 !important;
+            margin-bottom: 1rem !important;
+          }
+          .hero-content p {
+            font-size: 1.05rem !important;
+            margin-bottom: 2rem !important;
+          }
+          .hero-btns {
+            flex-direction: column !important;
+            gap: 0.8rem !important;
+            max-width: 280px !important;
+            margin: 0 auto !important;
+          }
+          .hero-btns a {
+            width: 100% !important;
+          }
+          .stat-card {
+            padding: 1.5rem 1rem !important;
+          }
+          .stat-card h3 {
+            font-size: 2.2rem !important;
+          }
+          .stat-card p {
+            font-size: 0.9rem !important;
+          }
+        }
       `}} />
     </main>
   );

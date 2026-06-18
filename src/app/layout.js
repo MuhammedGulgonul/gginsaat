@@ -18,6 +18,10 @@ export default function RootLayout({ children }) {
                 style={{ height: '60px', width: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }} 
               />
             </div>
+            <input type="checkbox" id="nav-toggle" className="nav-toggle" />
+            <label htmlFor="nav-toggle" className="nav-toggle-label">
+              <span className="hamburger"></span>
+            </label>
             <div className="nav-links">
               <a href="/">Anasayfa</a>
               <a href="/projeler/devam-eden">Devam Eden Projeler</a>
